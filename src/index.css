@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,4 +9,64 @@
   line-height: 1.5;
   font-weight: 400;
   font-size: 20px;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.commentWrapper {
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+
+  section {
+    background-color: azure;
+    margin: 10px 0px;
+    box-shadow: 5px 5px 10px grey;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      aspect-ratio: 1/1;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      background: grey;
+      border-radius: 10px;
+    }
+
+    span {
+      background: lightcoral;
+      width: 100%;
+    }
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .userData{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+
+
 }
